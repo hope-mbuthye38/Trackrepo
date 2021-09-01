@@ -11,14 +11,13 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Profile</h2>
-            <div class="card-header no-border mb-3" style="max-width: 540px;">
+            <div class="card-header bg-primary no-border mb-3" style="max-width: 540px;">
                 <div class="col-md-8">
-                    <img src="{{ userProfile.avatar_url }}" class="card-img img-fluid" alt="avatar" width="100"
-                        height="100">
+                    <img src="{{ userProfile.avatar_url }}" class="card-img img-fluid mb-3" >
                     <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title">{{ userProfile.name }} <a href="{{ userProfile.html_url }}"><i
-                                        class="fab fa-github"></i></a></h3>
+                        <div class="card-body bg-primary">
+                            <h3 class="card-title">{{ userProfile.name }} <a href="{{ userProfile.html_url }}">
+                                        <i class="fa fa-github-alt" aria-hidden="true"></i>Github</a></h3>
                             <p class="card-text"><span>Username:</span>{{ userProfile.login }}</p>
                             <p *ngIf="userProfile.bio" class="card-text"><span>Bio:</span>{{ userProfile.bio }}</p>
                             <p class="card-text"><span>Created at:</span>{{ userProfile.created_at | date }}</p>
@@ -30,10 +29,10 @@
                                 userProfile.email }}</p>
                             <p *ngIf="userProfile.company" class="card-text"><i class="fa fa-briefcase"></i>{{
                                 userProfile.company }}</p>
-                            <div class="badge badge-dark">
-                                <a class="btn btn-dark btn-sm space">Followers <span class="badge badge-light">{{
+                            <div class="badge badge-dark card-footer">
+                                <a class="btn btn-dark btn-sm mr-3 space">Followers <span class="badge badge-secondary">{{
                                         userProfile.followers }}</span></a>
-                                <a class="btn btn-dark btn-sm space">Following <span class="badge badge-light">{{
+                                <a class="btn btn-dark btn-sm space">Following <span class="badge badge-secondary">{{
                                         userProfile.following }}</span></a>
                             </div>
                         </div>
