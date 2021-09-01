@@ -5,11 +5,12 @@ import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-{path:'trackery', component:LandingComponent },
-{path:'trackhome', component:LandingComponent },
-{path:'trackuser', component:ProfileComponent },
-{path:'trackrepo', component:ProfileComponent },
-{path:'trackinfo', component:AboutComponent },
+// {path:'trackery', component:LandingComponent },
+{path:'landing', component:LandingComponent },
+{path:'user', component:ProfileComponent },
+{path:'profile', component:ProfileComponent },
+{path:'about', component:AboutComponent },
+
 
 ];
 
