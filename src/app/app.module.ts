@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TrackeeComponent } from './trackee/trackee.component';
+import { TrackeeComponent } from './repository/trackee.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TrackeeysDirective } from './trackeeys.directive';
@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { TrackleeDirective } from './tracklee.directive';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TrackleeDirective } from './tracklee.directive';
     DategeneratePipe,
     NavbarComponent,
     AboutComponent,
-    TrackleeDirective
+    TrackleeDirective,
+
   ],
   imports: [
   BrowserModule,
