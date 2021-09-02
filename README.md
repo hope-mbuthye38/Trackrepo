@@ -9,7 +9,7 @@ Hope Mbuthye
 This angular CLI application that allows users to be able to navigate from one repo to another enabling search of other repos
 
 # live git link
-To go live (https://github.com/hope-mbuthye38/Trackrepo);
+To go live (https://hope-mbuthye38.github.io/Trackeee/);
 
 # set up instructions
 open terminal git clone cd the folder code.or atom.based on text editor
