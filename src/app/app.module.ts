@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { TrackleeDirective } from './tracklee.directive';
+import { RepositoryComponent } from './repository/repository.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { TrackleeDirective } from './tracklee.directive';
     DategeneratePipe,
     NavbarComponent,
     AboutComponent,
-    TrackleeDirective
+    TrackleeDirective,
+    RepositoryComponent
  ],
   imports: [
   BrowserModule,
