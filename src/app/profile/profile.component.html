@@ -20,7 +20,7 @@
                                         <i class="fa fa-github-alt" aria-hidden="true"></i>Github</a></h3>
                             <p class="card-text"><span>Username:</span>{{ userProfile.login }}</p>
                             <p *ngIf="userProfile.bio" class="card-text"><span>Bio:</span>{{ userProfile.bio }}</p>
-                            <p class="card-text"><span>Created at:</span>{{ userProfile.created_at | date }}</p>
+                            <p class="card-text"><span>Created at:</span>{{ userProfile.created}}</p>
                             <p *ngIf="userProfile.location" class="card-text"><i class="fa fa-map-marker-alt"></i>{{
                                 userProfile.location }}</p>
                             <p *ngIf="userProfile.blog" class="card-text"><i class="fa fa-link"></i><a
@@ -71,7 +71,7 @@
                                     <button class="btn btn -dark">View on Github:: <i class="fa fa-github"></i> </button>
                                 </a>
                                 <div class="date">
-                                    <small><span>last modified::</span>{{repo.updated_at | date}} </small>
+                                    <small><span>last modified::</span>{{repo.updateda}} </small>
                                 </div>
                             </div>
                         </div>
