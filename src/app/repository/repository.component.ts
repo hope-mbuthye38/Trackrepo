@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RepoService } from '../repo.service'; 
 
 @Component({
   selector: 'app-repository',
@@ -6,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repository.component.scss']
 })
 export class RepositoryComponent implements OnInit {
+  repository:any
+  repoProfile!:any;
 
-  constructor() { }
+  constructor(private service : RepoService) { }
+
+  submitInput(){
+    this.service.updateFields(this.repository);
+    this.service.getRepoData().subscribe(repo =>{
+      this.repoProfile = repo;
+      console.log(this.repoProfile)
+    },error => {
+
+    });
+  }
 
   ngOnInit(): void {
   }
